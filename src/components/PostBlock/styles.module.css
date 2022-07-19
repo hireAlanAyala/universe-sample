@@ -18,7 +18,10 @@
     font-weight: bold;
     padding: 8px 20px;
     text-decoration: none;
-    /* width: 120px; */
+}
+
+.userLink:hover {
+    cursor: pointer;   
 }
 
 .userLink p {
