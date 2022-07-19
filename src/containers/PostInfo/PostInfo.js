@@ -22,15 +22,13 @@ const PostInfo = () => {
   return (
     <>
         <PostBlock {...state} />
-        <div>
-            {comments.map(({ body, email, id, name }) => (
-                <div key={id} className={styles.commentWrapper}>
-                    <p className={styles.title}>{name}</p>
-                    <p>{body}</p>
-                    <p className={styles.email}>{email}</p>
-                </div>
-            ))}
-        </div>
+          {comments.map(({ body, email, id, name }) => (
+              <div key={id} className={styles.commentWrapper}>
+                  <p className={styles.title}>{name}</p>
+                  <p>{body}</p>
+                  <p className={styles.email}>{email}</p>
+              </div>
+          ))}
     </>
   )
 }

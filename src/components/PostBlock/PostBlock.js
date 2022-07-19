@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './styles.module.css';
-import { useHistory, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const PostBlock = ({ title, body, userId }) => (
     <Link to={`/post/${userId}`} state={{ title, body, userId }}>

@@ -19,9 +19,7 @@ function Feed() {
         <header>
             <h1>Feed</h1>
         </header>
-        <div>
-            {posts.map(data => <PostBlock key={data.id} {...data} />)}
-        </div>
+        {posts.map(data => <PostBlock key={data.id} {...data} />)}
     </>
   );
 }
