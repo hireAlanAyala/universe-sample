@@ -1,24 +1,11 @@
-import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import useFetch from '../../utilities/useFetch';
 import PostBlock from "../../components/PostBlock";
 import styles from './styles.module.css';
 
 const PostInfo = () => {
   const { state } = useLocation();
-  const [comments, setComments] = useState([]);
-
-  useEffect(() => {
-    const fetchComments = async () => {
-      const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${state?.userId}/comments`);
-      const commentData = await res.json();
-      setComments(commentData); 
-    };
-
-    if (state?.userId) {
-        fetchComments().catch(console.error)
-    };  
-  }, [state?.userId]);
-  
+  const comments =  useFetch(`https://jsonplaceholder.typicode.com/posts/${state?.userId}/comments`, state?.userId);
   return (
     <>
         <PostBlock {...state} />

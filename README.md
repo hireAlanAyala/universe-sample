@@ -1,6 +1,8 @@
 # Twiddieverse
 
-[Twiddieverse](https://walker1177.github.io/universe-sample)
+See it live here.
+
+[Twiddieverse](https://walker1177.github.io/universe-sample/)
 
 ## Getting Started
 

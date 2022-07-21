@@ -1,19 +1,8 @@
-import { useState, useEffect } from 'react';
 import PostBlock from '../../components/PostBlock';
+import useFetch from '../../utilities/useFetch';
 
 function Feed() {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    const fetchPosts = async () => {
-      const res = await fetch('https://jsonplaceholder.typicode.com/posts');
-      const postData = await res.json();
-      setPosts(postData); 
-    };
-
-    fetchPosts().catch(console.error);
-  }, []);
-
+  const posts = useFetch('https://jsonplaceholder.typicode.com/posts');
   return (
     <>
         <header>
