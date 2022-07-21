@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, Link } from "react-router-dom";
 import Feed from './containers/Feed';
 import PostInfo from './containers/PostInfo';
 import User from './containers/User';
@@ -7,7 +7,9 @@ import Logo from './assets/logo.png';
 const App = () => (
   <>
     <header>
-      <img src={Logo} alt="logo" className="logo" />
+      <Link to="/">
+        <img src={Logo} alt="logo" className="logo" />
+      </Link>
     </header>
     <div className="app">
       <Routes>
