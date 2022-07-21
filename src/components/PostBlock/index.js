@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const PostBlock = ({ title, body, userId }) => (
     <Link to={`/post/${userId}`} state={{ title, body, userId }}>
         <div className={styles.wrapper}>
-          <Link to={`/user/${userId}`} state={{ userId }} className={styles.userLink}>
+          <Link to={`/user/${userId}`} state={{ userId }} className={styles.link}>
             <p>User #{userId}</p>
           </Link>
           <p className={styles.title}>{title}</p>

@@ -1,5 +1,5 @@
     import { useState, useEffect } from 'react';
-    import PostBlock from '../../components/PostBlock/PostBlock';
+    import PostBlock from '../../components/PostBlock';
     import { useLocation } from "react-router-dom"
 
     function User() {

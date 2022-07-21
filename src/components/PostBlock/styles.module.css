@@ -9,7 +9,7 @@
     cursor: pointer;
 }
 
-.userLink {
+.link {
     background-color: #62c0dc;
     border-radius: 10px;
     color: #000;
@@ -17,14 +17,9 @@
     font-size: 14px;
     font-weight: bold;
     padding: 8px 20px;
-    text-decoration: none;
 }
 
-.userLink:hover {
-    cursor: pointer;   
-}
-
-.userLink p {
+.link p {
     margin: 0;
 }
 
